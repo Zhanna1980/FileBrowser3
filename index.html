@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FileBrowser2</title>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<div class="layout">
+    <div class="header">
+        <div class="navigation">
+            <button id="btnBack"><</button>
+        </div>
+        <div class="navigation">
+            <button id="btnForward">></button>
+        </div>
+
+        <input id="path" type="text"/>
+
+    </div>
+
+    <div class="sub-layout">
+        <div class="side-bar">
+            <div id="fileExplorer">
+                <ul id="fs" class="element folder"></ul>
+            </div>
+        </div>
+        <div id="content"></div>
+    </div>
+    <div class="menu"></div>
+</div>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="item.js"></script>
+<script src="file.js"></script>
+<script src="folder.js"></script>
+<script src="fileSystem.js"></script>
+<script src="history.js"></script>
+<script src="ui.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
