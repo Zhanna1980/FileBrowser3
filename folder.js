@@ -65,7 +65,7 @@ var Folder = (function () {
      **/
     Folder.prototype.findChildByName = function (childName) {
         for (var i = 0; i < this.children.length; i++) {
-            if (this.children[i].name === childName) {
+            if (this.children[i].getName() === childName) {
                 return this.children[i];
             }
         }
@@ -104,7 +104,7 @@ var Folder = (function () {
      * */
     var findChildIndexById = function (children, id) {
         for (var i = 0; i < this.children.length; i++) {
-            if (this.children[i].id == id) {
+            if (this.children[i].getId() == id) {
                 return i;
             }
         }

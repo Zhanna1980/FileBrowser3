@@ -286,8 +286,8 @@ var FileSystem = (function () {
         for (var i = 1; i < arr.length; i++) {
             //parent is always before child in the array
             this.getItem(arr[i].parent).addChild(itemFromSaveFormat(arr[i]));
-            if (arr[i].id > this.lastAddedId) {
-                this.lastAddedId = arr[i].id;
+            if (arr[i].getId() > this.lastAddedId) {
+                this.lastAddedId = arr[i].getId();
             }
         }
     };

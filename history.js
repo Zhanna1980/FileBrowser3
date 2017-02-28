@@ -1,7 +1,7 @@
 var History = (function () {
     "use strict";
 
-    function History (fileSystem) {
+    function History () {
         this.history = [];
         this.currentItemIndex = -1;
     }
